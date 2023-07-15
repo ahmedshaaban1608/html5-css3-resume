@@ -1,0 +1,82 @@
+form {
+  width: 700px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+input,
+textarea {
+  display: inline-block;
+  border: none;
+  margin-top: 15px;
+  border-radius: 20px;
+}
+form .full {
+  width: 100%;
+}
+form .half {
+  width: 49.5%;
+}
+textarea {
+  resize: none;
+  padding: 20px;
+  font-style: italic;
+  letter-spacing: 0.15em;
+  word-spacing: 0.2em;
+  font-size: 16px;
+  font-weight: 600;
+}
+input {
+  padding: 10px 20px;
+  font-style: italic;
+  word-spacing: 0.2em;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 1s;
+}
+form span {
+  position: relative;
+}
+form span input {
+  width: 100%;
+  padding-left: 30px;
+}
+form span .icon {
+  position: absolute;
+  top: 47%;
+  left: 10px;
+}
+input:hover {
+  padding-left: 40px;
+}
+input[type="submit"] {
+  padding: 10px;
+  background: linear-gradient(90deg, var(--primary), Var(--lightPrimary));
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  background: var(--secondary);
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -100px;
+  top: 0;
+  height: 100%;
+  justify-content: center;
+}
+.social a {
+  margin-bottom: 40px;
+}
+.social a i {
+  scale: 2;
+}
+.social a i:hover {
+  color: red;
+  scale: 2.5;
+}

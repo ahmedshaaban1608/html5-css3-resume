@@ -1,0 +1,33 @@
+.content-center .about p {
+  box-sizing: border-box;
+  max-width: 70%;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  line-height: 1.5em;
+  font-size: 18px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 768px) {
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  .content-center .about p {
+    max-width: 100% !important;
+  }
+}
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.skills .percentage {
+  border-bottom: 15px solid;
+}
+.skills .skill-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}

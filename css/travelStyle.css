@@ -1,0 +1,78 @@
+/*Animation Keyframes*/
+@keyframes slides {
+  0% {
+    transform: translatex(0);
+  }
+  12% {
+    transform: translatex(0);
+  }
+
+  22% {
+    transform: translatex(-100%);
+  }
+
+  34% {
+    transform: translatex(-100%);
+  }
+
+  44% {
+    transform: translatex(-200%);
+  }
+
+  56% {
+    transform: translatex(-200%);
+  }
+
+  66% {
+    transform: translatex(-300%);
+  }
+
+  78% {
+    transform: translatex(-300%);
+  }
+
+  88% {
+    transform: translatex(-400%);
+  }
+
+  100% {
+    transform: translatex(-400%);
+  }
+}
+.countries a {
+  display: inline-block;
+  line-height: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, var(--primary), Var(--lightPrimary));
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  transform: scale(0.9);
+  transition: transform 0.5s;
+}
+.countries a:hover {
+  background: var(--secondary);
+}
+.container:target {
+  display: block;
+}
+.container {
+  display: none;
+  margin-top: 20px;
+  width: 600px;
+  height: 350px;
+  overflow: hidden;
+  border: 5px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 25px 30px -20px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slides 16s infinite;
+}
+
+img {
+  width: 100%;
+}

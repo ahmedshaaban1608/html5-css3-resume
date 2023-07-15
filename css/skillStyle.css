@@ -1,0 +1,60 @@
+.skills {
+  display: grid;
+  grid-template-columns: 1f;
+  gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  .skills-container {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+.skill-item {
+  background-color: white;
+  position: relative;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  transform: scale(1);
+  transition: transform 0.5s;
+  overflow: hidden;
+}
+.skill-item:hover {
+  transform: scale(1.1);
+}
+.skill-item img {
+  width: 100%;
+}
+.skill-item div {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(82, 106, 243, 0);
+  transform: scale(0);
+  transition: all 1s;
+}
+.skill-item:hover div {
+  transform: scale(1);
+  background: rgba(82, 106, 243, 0.9);
+}
+.skill-item div span {
+  align-self: center;
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+}

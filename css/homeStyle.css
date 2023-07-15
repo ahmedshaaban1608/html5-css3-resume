@@ -1,0 +1,28 @@
+body {
+  background: linear-gradient(270deg, #3586e8aa, #b4d0f377),
+    url("../img/home-bg.jpeg") no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+main h2 {
+  font-size: 70px;
+}
+main h2,
+main h3 {
+  margin-bottom: 20px;
+}
+main a {
+  display: inline-block;
+  line-height: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, var(--primary), Var(--lightPrimary));
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  transform: scale(0.9);
+  transition: transform 0.5s;
+}
+main a:hover {
+  transform: scale(1);
+}
